@@ -1,0 +1,203 @@
+/* CORE STYLES */
+
+body
+{
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    background: whitesmoke;
+    color: black;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img
+{
+    display: block;
+    width:100%;
+    height: auto;
+}
+
+h1, h2, h3
+{
+    margin: 0.5;
+    padding: 1em 0;
+}
+
+#part11,
+#part12,
+#part13
+{
+margin: 0;
+padding: 1em 0;
+}
+
+.darkred
+{
+    background: darkred;
+}
+
+.btn
+{
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: .5em 0;
+    box-shadow: 3px 3px 3px darkred;
+}
+
+.btn:hover
+{
+    background: rgba(255, 255, 0, 0.815);
+    color: black;
+}
+
+/* HEADER */
+
+#head2
+{
+    min-height: 450px;
+    color: black;
+    text-align: center;
+    
+}
+
+#head2 .head2-image
+{
+    position: absolute;
+    background: black url(movie.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#head2 h1
+{
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+#head2 .wrap,
+#part11 .wrap
+{
+    padding: 0 1.5em;
+}
+
+/* PART 11 */
+
+.video
+{
+    width: 100%;
+    height: auto;
+}
+
+#part11,
+#part12,
+#part13
+{
+    padding: 2em 1em 1em;
+}
+
+/* PART 02 */
+
+#part12
+{
+    background-color: gray;
+    padding: 2em 1em 1em;
+}
+
+#part12 ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#part12 li
+{
+    margin-bottom: 1em;
+    background: rgba(255, 255, 0, 0.815);
+    color: #333
+}
+
+#grey
+{
+    background: grey;
+}
+
+#part11,
+#part13
+{
+    background-color: darkred;
+}
+
+.card-content
+{
+    padding: 1.5em;
+}
+
+.yel
+{
+    background: rgba(255, 255, 0, 0.815);
+}
+
+/* MEDIA QUERY */
+
+@media(min-width: 700px)
+{
+    .grid
+    {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    #part11 .content-text p,
+    #part12 .content-text p,
+    #part13 .content-text p
+    {
+        padding-top: 0;
+    }
+
+    .wrap,
+    #part11,
+    #part12,
+    #part13
+    {
+        grid-column: 2/4;
+    }
+    #part11,
+    #part12,
+    #part13
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #footer2 div
+    {
+        padding-left: 5em;
+        display: flex;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+        
+    }
+
+    .fp1
+    {
+        border: solid gray 5px;
+        margin: 0 2em 1em 20em;
+    }
+    
+    .fp2
+    {
+        border: solid gray 5px;
+        margin: 0 1em 1em 1em;
+    }
+    
+}
